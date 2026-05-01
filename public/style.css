@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+body {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  /*background: #0E0E12;*/
+  background: #242323;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  color:#ffffff;
+  font-size: 60px;
+  margin-top: 1px;
+}
+
+#plugins {
+  display: grid;
+  font-family: "Stack Sans Headline", sans-serif;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #1e1e1e;
+  padding: 15px;
+  font-family: "Google Sans", sans-serif;
+  border-radius: 10px;
+}
+
+
+.card img {
+  width: 64px;
+  border-radius: 10px;
+}
+
+#version {
+  padding: 9px 14px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: #3D3D3D;
+  font-family: "Google Sans", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+#version:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+button {
+      display: inline-block;
+      outline: 0;
+      font-family: "Google Sans", sans-serif;
+      appearance: none;
+      padding: 0px 12px;
+      border: 0px solid transparent;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: rgb(9, 128, 76);
+      box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px;
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: 400;
+      height: 36px;
+      transition: all 150ms ease-in-out 0s;
+}
+                
+
+button:hover {
+      color: rgb(255, 255, 255);
+      background-color: rgb(17, 97, 73);
+      box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px, rgb(195 231 202) 0px 0px 0px 3px;
+                    }
+
+
+button svg {
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+}
+
+#search {
+  font-family: "Google Sans", sans-serif;
+  width: 300px;
+  padding: 9px;
+  margin-top: 5px;
+  margin: 20px;
+  border-radius: 12px;
+  background: #3D3D3D;
+  border: 1px solid transparent;
+  font-size: 16px;
+  color:#ffffff;
+  /*
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #3D3D3D;
+  padding: 9px;
+  cursor: text;*/
+
+}
+#search:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+#search::placeholder {
+  font-family: "Google Sans", sans-serif;
+}
+
+#pagination {
+  margin: 20px;
+  font-family: "Google Sans", sans-serif;
+}
+
+.page-btn {
+  margin: 5px;
+  padding: 8px 12px;
+  font-family: "Google Sans", sans-serif;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+
+.active {
+  border: 2px solid #00ad34;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Google Sans", sans-serif;
+  background: rgba(0,0,0,0.7);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  color: white;
+  font-family: "Google Sans", sans-serif;
+}
+
+#version-select,
+#platform-select {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 10px 0;
+  font-family: "Google Sans", sans-serif;
+
+  border-radius: 8px;
+  border: 2px solid #333;
+
+  background: #121212;
+  color: white;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}

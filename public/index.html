@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NanoPlugins</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <h1>NanoPlugins   </h1>
+</head>
+<body>
+<input 
+  type="text" 
+  id="search" 
+  placeholder="Search plugins..."
+  oninput="searchPlugins()"
+/>
+
+<select id="version" onchange="searchPlugins()">
+  <option value="">Select</option>
+  <option value="26.1">26.1</option>
+  <option value="1.21.5">1.21.5</option>
+  <option value="1.21.1">1.21.1</option>
+  <option value="1.20.6">1.20.6</option>
+  <option value="1.20.4">1.20.4</option>
+  <option value="1.20.2">1.20.3</option>
+  <option value="1.19.3">1.19.3</option>
+  <option value="1.19.2">1.19.4</option>
+  <option value="1.18.2">1.18.2</option>
+  <option value="1.17.1">1.17.1</option>
+  <option value="1.16.5">1.16.5</option>
+  <option value="1.12.2">1.12.2</option>
+  <option value="1.8.9">1.8.9</option>
+</select>
+<div id="pagination"></div>
+
+<div id="plugins"></div>
+
+<div id="download-modal" class="modal">
+  <div class="modal-content">
+    <h2>Select Version</h2>
+
+    <select id="version-select"></select>
+    <select id="platform-select"></select>
+
+    <button onclick="confirmDownload()">Download</button>
+    <button onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
